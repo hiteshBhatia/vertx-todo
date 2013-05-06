@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <title>ToDo List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 60px;
+        }
+    </style>
+    <script src="http://cdn.sockjs.org/sockjs-0.2.1.min.js"></script>
+    <script src="js/vertxbus.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="//raw.github.com/angular/angular.js/master/src/ngCookies/cookies.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/controller.js"></script>
+    <!--[if lt IE 9]>
+    <script src="static/js/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-controller="GeneralController">
+
+<div class="container" ng-model="details">
+    <div id="topbar">
+        <ng-include src="'templates/topBar.html'"></ng-include>
+    </div>
+
+    <div id="main" class="container">
+        <ng-include src="details.template.display"></ng-include>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

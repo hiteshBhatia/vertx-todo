@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/vertx">
+      <sourceFolder url="file://$MODULE_DIR$/vertx/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vertx/src/main/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vertx/src/main/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vertx/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vertx/src/test/groovy" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vertx/src/test/resources" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/vertx/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/vertx/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="vertx-lang-groovy-1.3.1.final" level="project" />
+    <orderEntry type="library" exported="" name="slf4j-api-1.6.2" level="project" />
+    <orderEntry type="library" exported="" name="netty-3.5.9.Final" level="project" />
+    <orderEntry type="library" exported="" name="vertx-core-1.3.1.final" level="project" />
+    <orderEntry type="library" exported="" name="jackson-mapper-asl-1.9.4" level="project" />
+    <orderEntry type="library" exported="" name="log4j-1.2.16" level="project" />
+    <orderEntry type="library" exported="" name="jackson-core-asl-1.9.4" level="project" />
+    <orderEntry type="library" exported="" name="vertx-lang-java-1.3.1.final" level="project" />
+    <orderEntry type="library" exported="" name="vertx-platform-1.3.1.final" level="project" />
+    <orderEntry type="library" exported="" name="hazelcast-2.4.1" level="project" />
+  </component>
+</module>
+
