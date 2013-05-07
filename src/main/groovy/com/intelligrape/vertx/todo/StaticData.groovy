@@ -27,20 +27,6 @@ def todos = [
                 "email": "hitesh@intelligrape.com",
                 "password": "igdefault",
                 "todo": ["task 11", "task 1c", "task 128"]
-        ],
-        [
-                "id": 1,
-                "username": "himanshu",
-                "email": "himanshu@intelligrape.com",
-                "password": "igdefault",
-                "todo": ["himanshu", "seth", "task 30"]
-        ],
-        [
-                "id": 2,
-                "username": "roni",
-                "email": "roni@intelligrape.com",
-                "password": "igdefault",
-                "todo": ["roni", "thomas", "task  27"]
         ]
 ]
 

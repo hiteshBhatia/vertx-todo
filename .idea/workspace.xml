@@ -5,7 +5,7 @@
     <ignored path="todo.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Server.groovy" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1367872083702" ignored="false" />
-    <file path="/index.html" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1367877303045" ignored="false" />
+    <file path="/index.html" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1367879954749" ignored="false" />
     <file path="/Matcher.groovy" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1364935377182" ignored="false" />
     <file path="/Dummy.txt" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1367866319708" ignored="false" />
     <file path="$PROJECT_DIR$/../../grailsProjects/Watch/application.properties" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1365426581023" ignored="false" />
@@ -23,11 +23,11 @@
     <file path="/topBar.html" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1367877293176" ignored="false" />
     <file path="/index_back.html" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1366580579285" ignored="false" />
     <file path="/signup.html" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1367865169396" ignored="false" />
-    <file path="/controller.js" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1367878709996" ignored="false" />
+    <file path="/controller.js" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1367909285038" ignored="false" />
     <file path="/UserController.groovy" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1367865847746" ignored="false" />
     <file path="/logout.html" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1367878315379" ignored="false" />
     <file path="/mainArea.html" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1367863673244" ignored="false" />
-    <file path="/todolist.html" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1367863948843" ignored="false" />
+    <file path="/todolist.html" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1367880846605" ignored="false" />
     <file path="/SessionManager.groovy" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1367871763647" ignored="false" />
     <file path="/fragment.js2" changelist="e4f97fc6-e009-49e7-960d-ab745cd9e3ee" time="1367878481152" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,6 +44,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
@@ -79,7 +80,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -92,7 +92,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="49" selection-start="1070" selection-end="1070" vertical-scroll-proportion="-15.791667">
+            <state line="33" column="41" selection-start="1000" selection-end="1008" vertical-scroll-proportion="-18.625">
               <folding />
             </state>
           </provider>
@@ -101,7 +101,16 @@
       <file leaf-file-name="topBar.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/templates/topBar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="43" selection-start="382" selection-end="382" vertical-scroll-proportion="-6.25">
+            <state line="11" column="81" selection-start="433" selection-end="433" vertical-scroll-proportion="-6.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/templates/signup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="18" selection-start="133" selection-end="133" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -110,7 +119,7 @@
       <file leaf-file-name="signin.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/templates/signin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="38" selection-start="276" selection-end="310" vertical-scroll-proportion="-1.875">
+            <state line="5" column="53" selection-start="336" selection-end="336" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
@@ -119,7 +128,16 @@
       <file leaf-file-name="Server.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/com/intelligrape/vertx/todo/Server.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="5" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0">
+            <state line="13" column="45" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todolist.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/templates/todolist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="32" selection-start="32" selection-end="37" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -137,7 +155,16 @@
       <file leaf-file-name="controller.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="57" selection-start="2807" selection-end="2807" vertical-scroll-proportion="0.33274648">
+            <state line="113" column="18" selection-start="3416" selection-end="3416" vertical-scroll-proportion="0.50549453">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StaticData.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/intelligrape/vertx/todo/StaticData.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="46" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,20 +181,20 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/web/js/myController.js" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/intelligrape/vertx/todo/StaticData.groovy" />
         <option value="$PROJECT_DIR$/web/templates/signin.html" />
         <option value="$PROJECT_DIR$/web/mainArea.html" />
-        <option value="$PROJECT_DIR$/web/templates/todolist.html" />
         <option value="$PROJECT_DIR$/web/templates/mainArea.html" />
-        <option value="$PROJECT_DIR$/web/templates/signup.html" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/intelligrape/vertx/todo/UserController.groovy" />
         <option value="$PROJECT_DIR$/mods/ig.simple-session-manager-v1.0/org/ig/mods/SessionManager.groovy" />
         <option value="$PROJECT_DIR$/mods/ig.simple-session-manager-v1.0/mod.json" />
         <option value="$PROJECT_DIR$/mods/ig.simple-session-manager-v1.0/SessionManager.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/intelligrape/vertx/todo/Server.groovy" />
         <option value="$PROJECT_DIR$/web/templates/topBar.html" />
-        <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/templates/logout.html" />
+        <option value="$PROJECT_DIR$/web/templates/signup.html" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/intelligrape/vertx/todo/StaticData.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/intelligrape/vertx/todo/Server.groovy" />
+        <option value="$PROJECT_DIR$/web/templates/todolist.html" />
+        <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/js/controller.js" />
       </list>
     </option>
@@ -203,7 +230,22 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
+        <subPane subId="Tests" />
         <subPane subId="Production">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -216,7 +258,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-        <subPane subId="Tests" />
         <subPane subId="All">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -226,20 +267,6 @@
             <PATH_ELEMENT USER_OBJECT="todo">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -304,51 +331,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="groovy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="mods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ig.simple-session-manager-v1.0" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -357,17 +340,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.0" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -385,6 +368,12 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="" />
       <setting name="path" value="" />
@@ -394,18 +383,25 @@
       <setting name="debug" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -436,19 +432,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -462,6 +445,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -483,13 +473,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="0" />
@@ -608,6 +591,20 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/js/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="28" selection-start="3208" selection-end="3213" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/intelligrape/vertx/todo/StaticData.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="46" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mods/vertx.web-server-v1.0/org/vertx/mods/WebServer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="1" selection-start="572" selection-end="572" vertical-scroll-proportion="0.39399624" />
@@ -625,27 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/todolist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="14" selection-start="613" selection-end="613" vertical-scroll-proportion="-11.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mods/ig.simple-session-manager-v1.0/SessionManager.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/intelligrape/vertx/todo/UserController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="100" selection-start="456" selection-end="552" vertical-scroll-proportion="0.521978">
@@ -653,53 +629,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/intelligrape/vertx/todo/StaticData.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="6" selection-start="1754" selection-end="1868" vertical-scroll-proportion="0.81514084">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mods/vertx.auth-mgr-v1.1/mod.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mods/ig.simple-session-manager-v1.0/mod.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="11" selection-start="13" selection-end="13" vertical-scroll-proportion="0.02640845">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="49" selection-start="1070" selection-end="1070" vertical-scroll-proportion="-15.791667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/topBar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="382" selection-end="382" vertical-scroll-proportion="-6.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="38" selection-start="276" selection-end="310" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/intelligrape/vertx/todo/Server.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/templates/logout.html">
@@ -709,9 +641,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/intelligrape/vertx/todo/StaticData.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="46" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/topBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="81" selection-start="433" selection-end="433" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="18" selection-start="133" selection-end="133" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="53" selection-start="336" selection-end="336" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/intelligrape/vertx/todo/Server.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="45" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="41" selection-start="1000" selection-end="1008" vertical-scroll-proportion="-18.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/todolist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="32" selection-start="32" selection-end="37" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="57" selection-start="2807" selection-end="2807" vertical-scroll-proportion="0.33274648">
+        <state line="113" column="18" selection-start="3416" selection-end="3416" vertical-scroll-proportion="0.50549453">
           <folding />
         </state>
       </provider>
