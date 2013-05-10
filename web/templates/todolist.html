@@ -13,7 +13,7 @@
     </h3>
 
     <ul style="list-style: none">
-        <li ng-repeat="item in todos | orderBy:'-id'" class="well well-small"  contenteditable="true" ngChange="update(item)">
+        <li ng-repeat="item in todos | orderBy:'-id'" class="well well-small"  contenteditable="true">
             {{item.task}} <button class="pull-right" ng-click="delete(item)">Delete</button>
         </li>
     </ul>
