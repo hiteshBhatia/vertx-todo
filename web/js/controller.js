@@ -8,15 +8,6 @@ var loggedOutTemplates = {"navigation": 'templates/signin.html', "display": 'tem
 var loggedInTemplates = {"navigation": 'templates/logout.html', "display": 'templates/todolist.html'};
 var cookieNames = ["sessionID", "username"];
 
-//function authorise(sessionID) {
-//    eb.send("vertx.basicauthmanager.authorise", {sessionID: sessionID }, function (reply) {
-//        console.log(reply.statpus);
-//    });
-//}
-//
-//
-//
-
 
 function GeneralController($scope, $cookieStore) {
     $scope.master = {};
@@ -25,12 +16,10 @@ function GeneralController($scope, $cookieStore) {
     $scope.todos = {};
 
 
-
-    if ($cookieStore.get('sessionID')) {
+    if (isLoggedIn()) {
         $scope.details.username = $cookieStore.get('username')
         $scope.details.template = loggedInTemplates;
     }
-
 
 
     $scope.login = function (loginCredentials) {
@@ -43,13 +32,40 @@ function GeneralController($scope, $cookieStore) {
     }
 
     $scope.register = function (user) {
-//        $scope.master = angular.copy(user);
         registerAndLoginUser(user)
     };
 
     $scope.isUnchanged = function (user) {
         return angular.equals(user, $scope.master);
     };
+
+    $scope.delete = function (task) {
+        deleteTask(task)
+    };
+
+    $scope.add = function (newTask) {
+        addTask(newTask, getUsername())
+    };
+    $scope.update = function (task) {
+        console.log(task)
+    };
+
+    function addTask(taskName, username) {
+        var length = 1;
+        var existing;
+
+        eb.send('vertx.mongopersistor', {action: 'find', collection: 'todos', matcher: {"username": username}},
+            function (reply) {
+                existing = reply.results[0].todo ? reply.results[0].todo.length : 0;
+                var finalLength = existing + 1;
+                eb.send('vertx.mongopersistor', {action: 'update', collection: 'todos', criteria: {username: username},
+                    objNew: { $push: { todo: { "id": finalLength, "task": taskName }}}
+                }, function (replied) {
+                    console.log(replied)
+                    findTodos()
+                });
+            });
+    }
 
     function registerAndLoginUser(userData) {
         userData.action = "register"
@@ -66,6 +82,11 @@ function GeneralController($scope, $cookieStore) {
 
     function isLoggedIn() {
         return $cookieStore.get("sessionID")
+    }
+
+    function getUsername() {
+        return $cookieStore.get("username")
+
     }
 
     function performLoginAndOtherActions(loginCredentials) {
@@ -104,25 +125,36 @@ function GeneralController($scope, $cookieStore) {
     }
 
     function findTodos() {
-        console.log("Finding todos")
-        eb.send('vertx.mongopersistor', {action: 'find', collection: 'todos', matcher: {"username": "hitesh"} },
+        eb.send('vertx.mongopersistor', {
+                action: 'find',
+                collection: 'todos',
+                matcher: {"username": getUsername()},
+                sort: {
+                    "todo": -1
+                }
+            },
             function (reply) {
-                console.log(typeof reply.results);
-                console.log(reply.results[0].todo);
+
                 $scope.$apply(
-                    $scope.todos = reply.results[0]
+                    $scope.todos = reply.results[0].todo
                 );
-                console.log($scope.todos.todo);
             });
     }
 
+    function deleteTask(task) {
+        var username = getUsername();
+        eb.send('vertx.mongopersistor', {action: 'update', collection: 'todos', criteria: {username: username},
+            objNew: { $pull: {"todo": {'id': task.id} }}
+        }, function (reply) {
+            findTodos()
+            console.log(reply)
+        });
+    }
 
     eb.onopen = function () {
-        if(isLoggedIn()) {
+        if (isLoggedIn()) {
             findTodos()
         }
     };
 
 }
-
-

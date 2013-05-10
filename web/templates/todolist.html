@@ -1,5 +1,20 @@
-<ul>
-    <li ng-repeat="todo in todos.todo">
-        {{todo}}
-    </li>
-</ul>
+<div>
+    <form id="taskForm" onsubmit="this.reset()">
+        <input id="task" type="text" class="span12" placeholder="Enter Task" accesskey="/" ng-model="newTask">
+        <button type="submit" class="btn btn-primary" ng-click="add(newTask)">Add Task</button>
+    </form>
+    <hr/>
+</div>
+
+
+<div>
+    <h3>
+        Todo
+    </h3>
+
+    <ul style="list-style: none">
+        <li ng-repeat="item in todos | orderBy:'-id'" class="well well-small"  contenteditable="true" ngChange="update(item)">
+            {{item.task}} <button class="pull-right" ng-click="delete(item)">Delete</button>
+        </li>
+    </ul>
+</div>

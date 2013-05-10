@@ -26,7 +26,11 @@ def todos = [
                 "username": "hitesh",
                 "email": "hitesh@intelligrape.com",
                 "password": "igdefault",
-                "todo": ["task 11", "task 1c", "task 128"]
+                "todo": [
+                        ["id": 0, "task": "task 11"],
+                        ["id": 1, "task": "task 12"],
+                        ["id": 2, "task": "task 13"],
+                ]
         ]
 ]
 
