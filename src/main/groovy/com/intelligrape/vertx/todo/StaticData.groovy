@@ -23,9 +23,9 @@ def pa = 'vertx.mongopersistor'
 def todos = [
         [
                 "id": 0,
-                "username": "hitesh",
-                "email": "hitesh@intelligrape.com",
-                "password": "igdefault",
+                "username": "superman",
+                "email": "superman@intelligrape.com",
+                "password": "superman",
                 "todo": [
                         ["id": 0, "task": "task 11"],
                         ["id": 1, "task": "task 12"],
